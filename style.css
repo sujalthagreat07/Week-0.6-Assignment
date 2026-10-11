@@ -1,0 +1,175 @@
+/* Apple-inspired colors */
+:root {
+    --black: #000000;
+    --dark: #1c1c1e;
+    --gray: #a1a5a9;
+    --light: #ffffff;
+}
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mission 1: CSS Box Model spacing for headings and paragraphs */
+h1,
+p {
+    margin-bottom: 20px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--black);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--light);
+}
+
+/* Business Card */
+.business-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+    background-color: var(--dark);
+    border: 2px solid #333;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Profile */
+.profile {
+    text-align: center;
+}
+
+.label {
+    color: var(--gray);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#profile-name {
+    margin-bottom: 8px;
+    color: var(--light);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+
+.card-info {
+    color: var(--gray);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.location {
+    margin-top: 4px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Divider */
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #3a3a3c;
+}
+
+/* Contact */
+.contact h2 {
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Contact Box */
+.contact-form {
+    padding: 20px;
+    background-color: #252527;
+    border: 1px solid #3a3a3c;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* First + Last Name */
+.name-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* Inputs */
+.contact-form input {
+    width: 100%;
+    padding: 13px 14px;
+    background-color: #1c1c1e;
+    border: 1px solid #444;
+    border-radius: 7px;
+    outline: none;
+    color: var(--light);
+    font-size: 14px;
+}
+
+.contact-form input:focus {
+    border-color: var(--gray);
+}
+
+.contact-form input::placeholder {
+    color: #777;
+}
+
+/* Button: keep the 15px right margin without horizontal overflow */
+.contact-form button {
+    width: calc(100% - 15px);
+    padding: 13px;
+    margin-top: 4px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--light);
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: var(--gray);
+}
+
+/* Footer */
+footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+}
+
+/* Prevent the general paragraph spacing from adding extra space below the footer */
+footer p {
+    margin-bottom: 0;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .business-card {
+        padding: 20px;
+    }
+
+    #profile-name {
+        font-size: 28px;
+    }
+
+    .name-fields {
+        grid-template-columns: 1fr;
+    }
+}
