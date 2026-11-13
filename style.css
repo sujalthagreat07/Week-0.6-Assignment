@@ -6,8 +6,6 @@
     --light: #ffffff;
 }
 
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -224,7 +222,6 @@ hr {
     color: #777;
 }
 
-/* Send Message Button */
 .contact-form button {
     width: calc(100% - 15px);
     padding: 13px;
@@ -308,4 +305,59 @@ footer p {
         width: 70%;
         max-width: 220px;
     }
+}
+
+#theme-toggle {
+    padding: 10px 16px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #a1a5a9;
+}
+
+body.dark-mode {
+    background-color: #121826;
+    color: #ffffff;
+}
+
+body.dark-mode .navigation {
+    background-color: #0b1220;
+    border-color: #526078;
+}
+
+body.dark-mode .business-card {
+    background-color: #0b1220;
+    border-color: #526078;
+}
+
+body.dark-mode .contact-form {
+    background-color: #172033;
+    border-color: #526078;
+}
+
+body.dark-mode .contact-form input {
+    background-color: #121826;
+    color: #ffffff;
+    border-color: #526078;
+}
+
+body.dark-mode .contact-form input::placeholder {
+    color: #a1a5a9;
+}
+
+body.dark-mode .card-info {
+    color: #d1d5db;
+}
+
+body.dark-mode #profile-name,
+body.dark-mode #about-name {
+    color: #ffffff;
 }
