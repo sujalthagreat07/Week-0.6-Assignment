@@ -4,24 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Online Business Card | Sujal Tamang</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Navigation Menu -->
     <nav class="navigation">
         <a href="#profile-name">Home</a>
         <a href="#contact">Contact</a>
         <a href="#about-name">About</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#gallery">Gallery</a>
 
+        <!-- Week 11: Dark Mode -->
         <button id="theme-toggle" type="button">
             Toggle Dark Mode
         </button>
     </nav>
 
+
     <main class="content-wrapper">
 
+        <!-- CARD 1: PERSONAL BUSINESS CARD -->
         <section class="business-card">
 
             <div class="profile">
@@ -34,7 +41,7 @@
                 </p>
 
                 <p class="location">Seoul, Korea</p>
-                
+
                 <img
                     class="profile-image"
                     src="profile.jpg"
@@ -43,7 +50,8 @@
             </div>
 
             <hr>
-            
+
+            <!-- CONTACT FORM -->
             <div class="contact" id="contact">
                 <h2>Get in Touch</h2>
 
@@ -84,6 +92,8 @@
 
         </section>
 
+
+        <!-- CARD 2: ABOUT ME -->
         <section class="business-card second-card" id="about">
 
             <div class="profile">
@@ -91,7 +101,9 @@
 
                 <h2 id="about-name">Sujal Tamang</h2>
 
-                <p class="card-info"></p>
+                <p class="card-info">
+                    Computer Engineering Student
+                </p>
 
                 <p class="location">Seoul, Korea</p>
             </div>
@@ -99,22 +111,113 @@
             <hr>
 
             <div class="contact">
-                <h2>My Goals</h2>
+                <h2>My Goals & Vision</h2>
 
-                <p class="card-info">
-                    Build responsive websites and improve my
-                    software engineering skills.
+                <p class="about-description">
+                    I am a computer engineering student who is
+                    passionate about technology, creativity, and
+                    continuous learning. I enjoy exploring new ideas
+                    and developing skills that help me grow both
+                    personally and professionally.
+                </p>
+
+                <p class="about-description">
+                    My goal is to become a skilled software engineer
+                    who can create meaningful digital experiences,
+                    develop useful websites, and build technology
+                    that makes everyday life easier.
+                </p>
+
+                <p class="about-description">
+                    I also want to use technology and digital platforms
+                    to share knowledge, express creativity, and connect
+                    with people from different countries, cultures,
+                    and backgrounds around the world.
+                </p>
+
+                <p class="about-description">
+                    I believe that learning from others, exchanging
+                    ideas, and working together can create new
+                    opportunities. I want to keep improving my skills,
+                    exploring different perspectives, and making a
+                    positive contribution to the global community.
                 </p>
             </div>
 
             <footer>
-                <p>Learning • Creating • Growing</p>
+                <p>Learning • Creating • Connecting • Growing</p>
+            </footer>
+
+        </section>
+
+
+        <!-- WEEK 12: HOBBY LIST -->
+        <section class="business-card hobby-card" id="hobbies">
+
+            <div class="profile">
+                <p class="label">WEEK 12 • ARRAYS AND LOOPS</p>
+
+                <h2>My Hobbies & Interests</h2>
+
+                <p class="card-info">
+                    Things I enjoy learning, exploring, and doing.
+                </p>
+            </div>
+
+            <hr>
+
+            <!-- JavaScript generates the list here -->
+            <div id="hobby-list"></div>
+
+            <footer>
+                <p>My Interests • My Lifestyle • My Journey</p>
+            </footer>
+
+        </section>
+
+
+        <!-- WEEK 12: FIVE-PHOTO GALLERY -->
+        <section class="business-card gallery-card" id="gallery">
+
+            <div class="profile">
+                <p class="label">MY PHOTO COLLECTION</p>
+
+                <h2>My Gallery</h2>
+
+                <p class="card-info">
+                    A collection of moments, experiences,
+                    and memories.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="gallery-container">
+
+                <img
+                    id="gallery-image"
+                    src="first.jpg"
+                    alt="My gallery photo 1"
+                >
+
+                <p id="photo-counter">Photo 1 of 5</p>
+
+                <button id="next-photo" type="button">
+                    Next Photo →
+                </button>
+
+            </div>
+
+            <footer>
+                <p>Memories • Experiences • Inspiration</p>
             </footer>
 
         </section>
 
     </main>
 
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
